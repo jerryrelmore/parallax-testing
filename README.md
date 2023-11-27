@@ -1,4 +1,4 @@
-Name: parallax_testing.py
+Name: `parallax_testing.py`
 
 Description: Wrote this to test a simple parallax effect for a star field. Very basic, very hacky.
 
