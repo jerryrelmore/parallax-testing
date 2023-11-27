@@ -6,6 +6,7 @@ import copy
 import time
 import random
 import pygame as pg
+from pygame.locals import *
 
 
 # HEIGHT = 1080
@@ -98,6 +99,11 @@ if __name__ == "__main__":
     old_pixel_map = pixel_map
     _running = True
     while _running:
+
         display_starfield(pixel_map, old_pixel_map, color_palette)
         old_pixel_map = copy.deepcopy(pixel_map)
         pixel_map = update_starfield(pixel_map)
+        for event in pg.event.get():
+            if event.type == pg.QUIT or \
+                    (event.type == KEYDOWN and (event.key == pg.K_ESCAPE or event.key == pg.K_q)):  # Quit
+                _running = False
