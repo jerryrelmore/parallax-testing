@@ -5,5 +5,5 @@ Description: Wrote this to test a simple parallax effect for a star field. Very 
 Usage:
   1. Install PyGame: `pip install pygame` or `pip install -r requirements.txt`
   2. Execute: `python3 src/parallax_testing.py`
-  3. Press *ESC* or *q* to end.
+  3. Press `ESC` or `q` to end.
 
